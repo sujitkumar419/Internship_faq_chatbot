@@ -1,0 +1,69 @@
+
+✅ 1. recommendation_engine.py (for Domain Recommender)
+
+`python
+
+Internship Domain Recommendation Engine by Sujit Kumar
+
+Sample student profile
+user_profile = {
+    "skills": ["python", "data analysis", "machine learning"],
+    "interests": ["AI", "statistics"],
+    "goals": ["become a data scientist"]
+}
+
+Domain keywords
+domains = {
+    "Data Science": ["python", "machine learning", "statistics", "data analysis"],
+    "Web Development": ["html", "css", "javascript", "react"],
+    "Cybersecurity": ["network", "security", "linux", "ethical hacking"]
+}
+
+def recommend_domains(profile, domains):
+    scores = {}
+    for domain, keywords in domains.items():
+        match_score = len(set(profile["skills"] + profile["interests"] + profile["goals"]) & set(keywords))
+        scores[domain] = match_score
+    sorted_domains = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+    return sorted_domains[:3]
+
+Output
+recommendations = recommenddomains(userprofile, domains)
+for domain, score in recommendations:
+    print(f"Recommended: {domain} (Match Score: {score})")
+`
+
+---
+
+✅ 2. nlu.yml (for FAQ Chatbot)
+
+`yaml
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+
+- intent: askstartdate
+  examples: |
+    - When does the internship start?
+    - Start date of internship?
+
+- intent: ask_certificate
+  examples: |
+    - Will I get a certificate?
+    - Is certificate provided?
+
+- intent: ask_mode
+  examples: |
+    - Is it remote or offline?
+    - Internship mode?
+
+- intent: goodbye
+  examples: |
+    - bye
+    - see you later
+
+`
