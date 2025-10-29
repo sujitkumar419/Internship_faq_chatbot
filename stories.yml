@@ -1,0 +1,14 @@
+version: "2.0"
+stories:
+- story: internship faq flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_start_date
+  - action: utter_ask_start_date
+  - intent: ask_certificate
+  - action: utter_ask_certificate
+  - intent: ask_mode
+  - action: utter_ask_mode
+  - intent: goodbye
+  - action: utter_goodbye
