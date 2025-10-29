@@ -21,3 +21,14 @@ It’s a simple yet powerful chatbot built using **Rasa**, designed to answer fr
 ```bash
 rasa train
 rasa shell
+---
+
+## ✨ Created by
+
+**Sujit Kumar**  
+AI Intern @ StaxTech  
+📍 Mauriyachak → Hostel Squad → Industry Squad  
+🛠️ Tools used: Rasa, YAML, Python  
+📁 Files included: `nlu.yml`, `domain.yml`, `stories.yml`, `config.yml`, `README.md`, `actions.py`  
+🧠 Style: Expressive documentation, poetic clarity, and recruiter-ready formatting  
+🌱 From Indian chaak to Machine Learning—my journey begins here.
