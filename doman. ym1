@@ -1,0 +1,27 @@
+version: "2.0"
+intents:
+  - greet
+  - ask_start_date
+  - ask_certificate
+  - ask_mode
+  - goodbye
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm your internship buddy. Ask me anything."
+
+  utter_ask_start_date:
+    - text: "The internship starts from 1st November."
+
+  utter_ask_certificate:
+    - text: "Yes, you'll receive a certificate upon completion."
+
+  utter_ask_mode:
+    - text: "The internship is remote."
+
+  utter_goodbye:
+    - text: "Goodbye! All the best for your internship."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
